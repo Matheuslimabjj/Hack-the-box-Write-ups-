@@ -107,7 +107,7 @@ done
 
 O `/wp-content/uploads/` respondeu com directory listing ativo, revelando o arquivo `upload_flag.txt`.
 
-**Resposta:** `HTB{d1sabl3_d1r3ct0ry_l1st1ng!}`
+**Resposta:** `-`
 
 ---
 
@@ -147,7 +147,7 @@ curl -i 'http://blog.inlanefreight.local/wp-admin/admin.php?page=download_report
 
 O servidor devolveu um CSV (`Content-Disposition: attachment; filename=all-contacts.csv`) e a flag estava, curiosamente, no campo "Last Name" de um dos contatos.
 
-**Resposta:** `HTB{unauTh_d0wn10ad!}`
+**Resposta:** `-`
 
 ---
 
@@ -250,9 +250,9 @@ Com o listener (`nc -lvnp 4444`) recebendo a conexão, estabilizei a shell e nav
 |---|---|
 | 1 — Versão do WordPress | `5.1.6` |
 | 2 — Tema em uso | `twentynineteen` |
-| 3 — Directory listing | `HTB{d1sabl3_d1r3ct0ry_l1st1ng!}` |
+| 3 — Directory listing | `-` |
 | 4 — Usuário não-admin | `Charlie Wiggins` |
-| 5 — Unauthenticated file download | `HTB{unauTh_d0wn10ad!}` |
+| 5 — Unauthenticated file download | `-` |
 | 6 — Versão do plugin LFI | `1.1.1` |
 | 7 — Usuário do sistema (letra "f") | `frank.mclane` |
 | 8 — Flag em `/home/erika` | Obtida via reverse shell |
